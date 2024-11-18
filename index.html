@@ -3,25 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ciências Biológicas - Curso</title>
+<title>Curso de Ciências Biológicas</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap&quot; rel="stylesheet">
 <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
 body {
 font-family: 'Montserrat', sans-serif;
 background-color: #f4f4f9;
 color: #333;
-margin: 0;
+line-height: 1.6;
 padding: 20px;
 }
 header {
 text-align: center;
-margin-bottom: 30px;
+padding: 20px;
+background-color: #2b7a78;
+color: white;
 }
 header h1 {
-color: #2b7a78;
+margin-bottom: 10px;
+}
+nav {
+text-align: center;
+margin-bottom: 30px;
+}
+nav a {
+margin: 0 15px;
+text-decoration: none;
+color: #3aafa9;
+font-weight: bold;
 }
 .content {
-max-width: 800px;
+max-width: 1000px;
 margin: 0 auto;
 }
 section {
@@ -33,48 +46,142 @@ margin-bottom: 20px;
 }
 section h2 {
 color: #3aafa9;
+margin-bottom: 15px;
 }
+.teacher-card {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+.teacher-card img {
+border-radius: 50%;
+width: 80px;
+height: 80px;
+margin-right: 15px;
+}
+ul { margin: 10px 0; }
+.faq {
+margin-top: 20px;
+}
+.faq h3 { cursor: pointer; }
+.faq p { display: none; margin-top: 10px; }
 footer {
 text-align: center;
-margin-top: 40px;
+padding: 20px;
+background-color: #2b7a78;
+color: white;
+margin-top: 30px;
 }
+footer a { color: #66fcf1; text-decoration: none; }
 </style>
 </head>
 <body>
+<!-- Cabeçalho -->
 <header>
 <h1>Curso de Ciências Biológicas</h1>
 <p>Explorando a vida em todas as suas formas</p>
 </header>
+
+<!-- Navegação -->
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#docentes">Corpo Docente</a>
+<a href="#grade">Grade Curricular</a>
+<a href="#depoimentos">Depoimentos</a>
+<a href="#faq">FAQ</a>
+<a href="#contato">Contato</a>
+</nav>
+
 <div class="content">
-<section>
+<!-- Seção: Sobre o Curso -->
+<section id="sobre">
 <h2>Sobre o Curso</h2>
-<p>O curso de <strong>Ciências Biológicas</strong> tem como objetivo formar profissionais aptos a atuar em diversas áreas relacionadas à biologia, meio ambiente e saúde, oferecendo uma base sólida de conhecimentos teóricos e práticos.</p>
+<p>O curso de <strong>Ciências Biológicas</strong> forma profissionais capacitados para atuar em diversas áreas, como pesquisa, conservação ambiental e ensino. Durante os 4 anos de curso, você terá uma formação teórica e prática para entender a vida em seus diversos níveis de organização.</p>
 </section>
 
-<section>
-<h2>Áreas de Atuação</h2>
+<!-- Seção: Corpo Docente -->
+<section id="docentes">
+<h2>Corpo Docente</h2>
+<div class="teacher-card">
+<img src="https://via.placeholder.com/80&quot; alt="Prof. João Silva">
+<div>
+<h3>Prof. Dr. João Silva</h3>
+<p>Especialista em Ecologia e Conservação.</p>
+</div>
+</div>
+<div class="teacher-card">
+<img src="https://via.placeholder.com/80&quot; alt="Profª. Maria Souza">
+<div>
+<h3>Profª. Dra. Maria Souza</h3>
+<p>Especialista em Biologia Molecular.</p>
+</div>
+</div>
+</section>
+
+<!-- Seção: Grade Curricular -->
+<section id="grade">
+<h2>Grade Curricular</h2>
 <ul>
-<li>Pesquisa em Biologia Molecular</li>
-<li>Conservação Ambiental</li>
-<li>Educação e Ensino</li>
-<li>Microbiologia e Parasitologia</li>
-<li>Biotecnologia</li>
-<li>Ecologia e Sustentabilidade</li>
+<li>1º Ano: Biologia Geral, Química, Ecologia</li>
+<li>2º Ano: Genética, Fisiologia, Zoologia</li>
+<li>3º Ano: Microbiologia, Botânica, Bioestatística</li>
+<li>4º Ano: Biotecnologia, Estágio Supervisionado, TCC</li>
 </ul>
 </section>
 
-<section>
-<h2>Duração do Curso</h2>
-<p>A duração média do curso é de 4 anos, com carga horária de 3.200 horas, incluindo disciplinas teóricas, práticas e estágio supervisionado.</p>
+<!-- Seção: Depoimentos -->
+<section id="depoimentos">
+<h2>Depoimentos de Alunos</h2>
+<blockquote>
+"O curso me proporcionou experiências incríveis, tanto em laboratórios quanto em campo!" - Ana Pereira
+</blockquote>
+<blockquote>
+"A diversidade de áreas abordadas no curso me preparou para o mercado de trabalho." - Carlos Lima
+</blockquote>
 </section>
 
-<section>
+<!-- Seção: Perguntas Frequentes (FAQ) -->
+<section id="faq" class="faq">
+<h2>Perguntas Frequentes</h2>
+<div>
+<h3>Qual a duração do curso?</h3>
+<p>A duração é de 4 anos.</p>
+</div>
+<div>
+<h3>O curso é presencial ou EAD?</h3>
+<p>O curso é oferecido na modalidade presencial, com algumas disciplinas em formato híbrido.</p>
+</div>
+<div>
+<h3>Há programas de intercâmbio?</h3>
+<p>Sim, temos parcerias com universidades internacionais.</p>
+</div>
+</section>
+
+<!-- Seção: Contato -->
+<section id="contato">
 <h2>Contato</h2>
 <p>Para mais informações, envie um e-mail para: <a href="contato@universidade.com">contato@universidade.com</a></p>
 </section>
 </div>
+
+<!-- Rodapé -->
 <footer>
 <p>© 2024 Universidade XYZ - Todos os direitos reservados.</p>
+<p>Nos siga nas redes sociais:
+<a href="#">Instagram</a> |
+<a href="#">Facebook</a> |
+<a href="#">LinkedIn</a>
+</p>
 </footer>
+
+<!-- Script para FAQ -->
+<script>
+document.querySelectorAll('.faq h3').forEach(item => {
+item.addEventListener('click', () => {
+const answer = item.nextElementSibling;
+answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+});
+});
+</script>
 </body>
 </html>
